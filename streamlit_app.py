@@ -27,7 +27,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 
 # Convert the Snowpark to Pandas
 pd_df = my_dataframe.to_pandas()
-st.dataframe(pd_pf)
+st.dataframe(pd_df)
 st.stop()
 
 # Convert Snowpark DataFrame column to a standard Python list
